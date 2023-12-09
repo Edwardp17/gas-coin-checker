@@ -88,7 +88,7 @@ async function parseTxns(txns, coin) {
 
 async function main(address, startDt, endDt, coin) {
     const startDate = new Date(startDt);
-    const endDate = new Date(endDt);
+    let endDate = new Date(endDt);
 
     // Check if the start date is greater than or equal to the end date
     if (startDate >= endDate) {
