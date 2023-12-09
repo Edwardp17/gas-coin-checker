@@ -10,5 +10,10 @@
       "src": "/(.*)",
       "dest": "/server.js"
     }
-  ]
+  ],
+  "functions": {
+    "api": {
+      "runtime": "nodejs16.x",
+      "includeFiles": ["package.json", "node_modules/**"]
+    }
 }
