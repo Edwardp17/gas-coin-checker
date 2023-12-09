@@ -1,13 +1,13 @@
 [tool.poetry]
-name = "gas-bonk"
+name = "gas-coin-checker"
 version = "0.1.0"
-description = "See how much BONK you would have if all your ETH gas bought BONK."
+description = "See how much coin you would have if all your ETH gas bought coin."
 authors = ["edwardp17"]
-readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
 ccxt = "^4.1.81"
+flask = "^3.0.0"
 
 
 [build-system]
