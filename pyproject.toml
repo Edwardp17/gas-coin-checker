@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "gas-bonk"
+version = "0.1.0"
+description = "See how much BONK you would have if all your ETH gas bought BONK."
+authors = ["edwardp17"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+ccxt = "^4.1.81"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.mypy.overrides]]
+ignore_missing_imports = true
