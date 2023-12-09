@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            /* Existing styles */
+            .spinner-image {
+                width: 200px;
+                height: 200px;
+                animation: spin .5s linear infinite;
+            }
+    
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+
+            label {
+                font-weight: bold; /* This makes the text bold */
+            }
+    
+            /* New styles for centering */
+            body, html {
+                background-color: #ffa500;
+                height: 100%;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+    
+            #spinner {
+                text-align: center; /* Center the spinner horizontally */
+                margin-top: 10px; /* Add some space above the spinner */
+            }
+
+            .results-container {
+                font-weight: bold;
+                font-size: 20px;
+                width: 90%; /* Adjust the width as needed */
+                max-width: 800px; /* Maximum width */
+                margin: 20px auto; /* Center the container */
+                overflow-wrap: break-word; /* Break and wrap text */
+                word-wrap: break-word; /* For older browsers */
+                white-space: pre-wrap; /* Preserve formatting and wrap text */
+            }
+
+            pre#results {
+                white-space: pre-wrap; /* Allows the text to wrap */
+                word-wrap: break-word; /* Breaks words that are too long for the line */
+                overflow-wrap: break-word; /* Alternative to word-wrap */
+                width: 80%; /* or some percentage */
+                max-width: 600px; /* or the maximum width you want */
+                margin: auto; /* for horizontal centering */
+            }
+        </style>
+        <meta charset="UTF-8">
+        <title>ETH gas bad</title>
+    </head>    
+<body>
+    <h1>you could've bought a coin with no soul</h1>
+    <form id="dataForm">
+        <label for="address">ETH Address:</label><br>
+        <input type="text" id="address" name="address"><br>
+        
+        <label for="startDate">Start Date:</label><br>
+        <input type="date" id="startDate" name="startDate" min="2023-01-05"><br>
+        
+        <label for="endDate">End Date:</label><br>
+        <input type="date" id="endDate" name="endDate"><br>
+        
+        <input type="submit" value="Calculate">
+        <div id="spinner" style="display: none;">
+            <img src="bonk.jpeg" alt="Loading..." class="spinner-image">
+        </div>
+    </form>
+    <h2>Results:</h2>
+    <div class="results-container">
+        <pre id="results"></pre>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
