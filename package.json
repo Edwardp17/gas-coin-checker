@@ -2,11 +2,11 @@
   "name": "gas-coin-checker",
   "version": "1.0.0",
   "description": "If you bought X coin with the money you spent on ETH gas fees, what would that stack be worth today?",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "server": "nodemon index.js"
+    "start": "node server.js",
+    "server": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
